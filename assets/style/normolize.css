@@ -1,14 +1,35 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../fonts/NunitoSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../fonts/NunitoSans-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url(../fonts/YesevaOne-Regular.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 400;
 }
