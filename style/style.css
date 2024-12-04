@@ -1,1 +1,170 @@
 @import url(normolize.css);
+
+/* GLOBAL */
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Yeseva One", serif;
+  color: #e3b873;
+}
+
+.button {
+  font-family: inherit;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: #e3b873;
+  border-radius: 2px;
+}
+
+/* GLOBAL */
+
+/* HEADER */
+
+.header {
+  background-color: #131313;
+}
+
+.header__container {
+  height: 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link,
+.header__phone {
+  color: #e3b873;
+}
+
+.header__list {
+  display: flex;
+  column-gap: 47px;
+}
+
+.header__link {
+  color: #fff;
+  transition: color 0.2s linear;
+}
+.header__link:hover {
+  color: #e3b873;
+}
+
+.active {
+  color: #e3b873;
+}
+
+.header__button {
+  padding: 13px 33px;
+  color: #fff;
+  transition: background-color 0.2s linear;
+}
+
+.header__button:hover {
+  background-color: #e3b850;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+.main {
+  background-color: #000;
+}
+
+.hero__container {
+  padding: 194px 43px;
+}
+
+.hero__title {
+  color: #fff;
+}
+
+.hero__title,
+.hero__title > span {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero__description {
+  color: #fff;
+  font-size: 2rem;
+  padding: 19px 0 41px 0;
+}
+
+.hero__button {
+  width: 207px;
+  height: 51px;
+  margin-right: 20px;
+  color: #fff;
+  transition: background-color 0.2s ease-out;
+}
+
+.hero__button:hover {
+  background-color: #e3b850;
+  border: 1px solid #e3b873;
+}
+
+.hero__button-sub {
+  background-color: #e3b87300;
+  border: 1px solid #fff;
+}
+/* MAIN */
+
+/* MOBILE */
+
+@media (max-width: 1256px) {
+  .header__container {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__list {
+    column-gap: 35px;
+  }
+  .header__button {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .header__list {
+    display: none;
+  }
+  .header__phone {
+    color: #fff;
+  }
+  .hero__container {
+    padding: 85px 18px;
+    /* display: flex; */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+  }
+
+  .hero__title,
+  .hero__title > span {
+    font-size: 22px;
+  }
+  .hero__description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .hero__button {
+    width: 100%;
+    margin-top: 26px;
+  }
+}
+/* MOBILE */

@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../fonts/NunitoSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url(../fonts/YesevaOne-Regular.woff2) format("woff2");
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 *,
@@ -7,8 +20,23 @@
 *::before {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+  color: #000;
   font-size: 11px;
   font-weight: 400;
+  white-space: nowrap;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button,
+input {
+  border: none;
 }
