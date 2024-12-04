@@ -8,7 +8,7 @@
 }
 
 .title {
-  font-family: "Yeseva One", serif;
+  font-family: "Yeseva One", sans-serif;
   color: #e3b873;
 }
 
@@ -72,11 +72,16 @@
 /* MAIN */
 
 .main {
-  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: initial;
 }
 
 .hero__container {
   padding: 194px 43px;
+  z-index: 1000;
 }
 
 .hero__title {
@@ -85,6 +90,7 @@
 
 .hero__title,
 .hero__title > span {
+  font-family: "Yeseva One", serif;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
@@ -130,9 +136,19 @@
   .header__button {
     display: none;
   }
+  .hero__title,
+  .hero__title > span {
+    font-size: 30px;
+  }
+  .hero__description {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 720px) {
+  .header__container {
+    height: 57px;
+  }
   .header__list {
     display: none;
   }
@@ -141,9 +157,10 @@
   }
   .hero__container {
     padding: 85px 18px;
-    /* display: flex; */
-    /* flex-direction: column;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .hero__title,
@@ -153,18 +170,16 @@
   .hero__description {
     font-size: 14px;
   }
-}
-
-@media (max-width: 500px) {
-  .hero__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 
   .hero__button {
-    width: 100%;
     margin-top: 26px;
   }
 }
+
+@media (max-width: 414px) {
+  .hero__button {
+    width: 100%;
+  }
+}
+
 /* MOBILE */
