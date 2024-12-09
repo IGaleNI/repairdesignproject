@@ -20,6 +20,12 @@
   border-radius: 2px;
 }
 
+.active {
+  color: #e3b873;
+  padding-bottom: 2px;
+  border-bottom: #e3b873 solid 1px;
+}
+
 /* GLOBAL */
 
 /* HEADER */
@@ -80,6 +86,12 @@
 }
 
 .hero__container {
+  max-height: 707px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: initial; */
   padding: 194px 43px;
 }
 
@@ -118,6 +130,15 @@
   background-color: #e3b87300;
   border: 1px solid #fff;
 }
+.project {
+  background-color: #131313;
+  height: 1073px;
+}
+
+.project__link {
+  color: #fff;
+}
+
 /* MAIN */
 
 /* MOBILE */
